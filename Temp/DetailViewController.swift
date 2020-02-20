@@ -2,9 +2,7 @@
 //  DetailViewController.swift
 //  Temp
 //
-//  Created by Jaimin Modi on 19/02/20.
-//  Copyright © 2020 Jaimin Modi. All rights reserved.
-//
+
 
 import UIKit
 
