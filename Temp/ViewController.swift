@@ -20,15 +20,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var viewNav :  CustomView!
     
+    var completion: (() -> Void)?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
-        viewNav  = UIView.fromNib()
+        /*viewNav  = UIView.fromNib()
         viewNav.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: viewNav.frame.size.height)
         
-        self.view.addSubview(viewNav)
+        self.view.addSubview(viewNav)*/
+
+        
+        CustomView.getInstance(self, completion)
 
 
         // Do any additional setup after loading the view.
